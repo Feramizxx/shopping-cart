@@ -1,0 +1,181 @@
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 70px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    left: 180px;
+    
+}
+.menu ul{
+display: flex;
+align-items: center;
+}
+
+.menu ul li{
+display: inline-block;
+margin-left: 15px;
+}
+
+
+
+.cart{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    width: 85px;
+    justify-content: space-between;
+
+}
+.cart div{
+    background-color: white;
+    width: 12em;
+    height: 10em;
+    position: absolute;
+    padding: 8px 4px;
+    top: 52px;
+    left: -57px;
+    z-index: 10;
+    border-radius: 10px;
+    box-shadow:   0 3px 10px rgb(0 0 0 / 0.2);
+}
+.cart div span{
+    color: black;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+}
+.cart div hr{
+    margin-top: 5px;
+}
+.hr{
+    border: 1px rgb(205, 201, 195) solid;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cart .cartBox{
+    display: none;
+}
+
+.product-list{
+    display: flex;
+    flex-direction: column;
+
+}
+.product-list li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.7em;
+   
+}
+.product-list li span{
+    margin-left: 0px;
+    padding: 0;
+}
+
+
+
+a{
+    position: relative;
+    font-family: 'Popins' ,sans-serif;
+    font-size: 16px;
+    padding: 0 10px;
+    letter-spacing: 0.5px;
+
+}
+
+.menu ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: orange;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -33px;
+
+
+}
+
+.menu ul li a:hover:after{
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.mobile-menu{
+    display: flex;
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    height: 50em;
+    width: 35%;
+    background-color: white;
+    overflow-x: hidden;
+    z-index: 10;
+}
+.active{
+    left: 200px;
+    background-color: black;
+}
+.mobile-menu ul{
+position: absolute;
+top: 50px;
+}
+.mobile-menu ul li{
+    margin-bottom: 5px;
+    padding: 4px;
+}
+.mobile-menu li a{
+    color: black;
+}
+.mobile-menu button{
+ width: 20px;
+ height: 20px;
+ position: absolute;
+ top: 5px;
+ left: 5px;
+ background-color: transparent;
+ border-color:transparent;
+ color: black;
+ font-weight: bold;
+ font-size: large;
+ 
+}
+
+
+
+.mobile-menu-hamburgerbtn{
+    display: none;
+    background: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 26px
+}
+
+@media screen and (max-width:930px) {
+  .menu{
+    display: none;
+  }
+ 
+  .mobile-menu-hamburgerbtn{
+    display: block;
+  }
+  .logo{
+    position: absolute;
+    left: 15px;
+  }
+}
+
+
+
